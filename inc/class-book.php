@@ -83,11 +83,12 @@ class Book {
 	}
 
 	/**
-	 * Returns book information in a useful, string only, format. Data is converted to HTML.
+	 * Returns book information in a useful, **string only**, format.
+	 * All data structures are converted to HTML compatible strings.
 	 *
 	 * @param int $id The book ID.
 	 *
-	 * @return array
+	 * @return array [ pb_ prefixed key => string, pb_ prefixed key => string, ... ]
 	 */
 	static function getBookInformation( $id = null ) {
 
